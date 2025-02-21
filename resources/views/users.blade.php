@@ -20,7 +20,8 @@
                         <img style="width: 45px; hight: 45px" class="rounded-full" src="{{asset('storage/' . $user->profile_photo)}}" alt="s">
                     </div>
                     <div>
-                        
+                        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">{{ $user->fullname }}</h2>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">@ {{ $user->username }}</p>
                     </div>
                 </li>
                 @endforeach
